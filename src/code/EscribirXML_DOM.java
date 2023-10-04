@@ -29,7 +29,7 @@ public class EscribirXML_DOM {
         coches.add(coche2);
         coches.add(coche3);
 
-        Path p = Path.of(Leer.pedirCadena("EjerciciosXML/src/resources/concesionario2.xml"));
+        Path p = Path.of(Leer.pedirCadena("Introduce ruta fichero: "));
 
         if (ficheroEscribible(p)) {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

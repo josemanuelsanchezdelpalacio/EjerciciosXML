@@ -21,8 +21,7 @@ import java.util.List;
 public class LeerXML_DOM {
 
     public static void leerArchivo(){
-        //Path p = Path.of(Leer.pedirCadena("Introduzca la ruta del archivo xml a leer: "));
-        Path p = Path.of("src/resources/concesionario.xml");
+        Path p = Path.of(Leer.pedirCadena("Introduce ruta fichero: "));
         if (Files.exists(p)) {
             if (p.toString().endsWith(".xml")) {
                 DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

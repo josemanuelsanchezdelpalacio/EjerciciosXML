@@ -1,5 +1,6 @@
 package code;
 
+import libs.Leer;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -13,7 +14,7 @@ import static libs.FicheroEscribible.ficheroEscribible;
 public class LeerSAX {
 
     public static void leer() {
-        Path p = Path.of("EjerciciosXML/src/resources/concesionario2.xml");
+        Path p = Path.of(Leer.pedirCadena("Introduce ruta fichero: "));
         ArrayList<Coche> cochesXML = new ArrayList<>();
 
         if (ficheroEscribible(p)) {
